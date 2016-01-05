@@ -1,0 +1,5 @@
+E:\CNBlogsDemo\TouTou.RegexTool\TouTou.RegexTool\bin\Debug\TouTou.RegexTool.dll
+E:\CNBlogsDemo\TouTou.RegexTool\TouTou.RegexTool\bin\Debug\TouTou.RegexTool.pdb
+E:\CNBlogsDemo\TouTou.RegexTool\TouTou.RegexTool\obj\Debug\TouTou.RegexTool.csprojResolveAssemblyReference.cache
+E:\CNBlogsDemo\TouTou.RegexTool\TouTou.RegexTool\obj\Debug\TouTou.RegexTool.dll
+E:\CNBlogsDemo\TouTou.RegexTool\TouTou.RegexTool\obj\Debug\TouTou.RegexTool.pdb
