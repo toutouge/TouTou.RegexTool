@@ -1,5 +1,5 @@
 # TouTou.RegexTool
-通用(Java)正则表达式工具
+Java正则表达式工具
 <br/>
 
 一、校验数字的表达式
