@@ -1,6 +1,10 @@
 package com.toutou;
 
-import java.util.regex.*;
+import com.google.common.base.Strings;
+
+import java.net.URLDecoder;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author toutou
@@ -142,6 +146,52 @@ public class TouTouRegex {
         Matcher matcher = p.matcher(url);
         matcher.find();
         return matcher.group();
+    }
+
+    /**
+     * 检测域名
+     * @param url    原始url
+     * @param target 需要检测的url
+     * @return
+     */
+    public static boolean CheckDomain(String url, String target){
+        String urlDecode = url;
+        try {
+            urlDecode = URLDecoder.decode(url);
+        }catch (Exception e){
+
+        }
+
+        Pattern pattern = Pattern.compile("://(.*?)/", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(urlDecode);
+        matcher.find();
+        String domain = matcher.group(1);
+        if(!Strings.isNullOrEmpty(domain)){
+            if(domain.contains(target)){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * 检测域名
+     * @param url    原始url
+     * @param target 需要检测的url
+     * @return
+     */
+    public static boolean CheckDomain2(String url, String target){
+        String urlDecode = url;
+        try {
+            urlDecode = URLDecoder.decode(url);
+        }catch (Exception e){
+
+        }
+
+        String pattern = "https?://[^/]*" + target + "/.*";
+        boolean isMatch = Pattern.matches(pattern, urlDecode);
+        return isMatch;
     }
 
     /**

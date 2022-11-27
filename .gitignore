@@ -1,0 +1,25 @@
+# Operating System Files 
+
+*.DS_Store 
+Thumbs.db 
+*.sw? 
+.#* 
+*# 
+*~ 
+*.sublime-* 
+**/logs
+**/*.log
+*.log.*
+# Build Artifacts 
+
+.gradle/
+build/
+target/
+bin/
+
+# IntelliJ IDEA Files 
+
+*.iml
+*.ipr 
+*.iws 
+*.idea
