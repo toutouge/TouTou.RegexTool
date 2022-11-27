@@ -154,7 +154,7 @@ public class TouTouRegex {
      * @param target 需要检测的url
      * @return
      */
-    public static boolean CheckDomain(String url, String target){
+    public static boolean checkDomain(String url, String target){
         String urlDecode = url;
         try {
             urlDecode = URLDecoder.decode(url);
@@ -181,7 +181,7 @@ public class TouTouRegex {
      * @param target 需要检测的url
      * @return
      */
-    public static boolean CheckDomain2(String url, String target){
+    public static boolean checkDomain2(String url, String target){
         String urlDecode = url;
         try {
             urlDecode = URLDecoder.decode(url);
